@@ -11,6 +11,9 @@ importers:
       '@google/generative-ai':
         specifier: ^0.24.0
         version: 0.24.0
+      '@huggingface/inference':
+        specifier: ^3.6.1
+        version: 3.6.1
       openai:
         specifier: ^4.89.0
         version: 4.89.0
@@ -260,6 +263,17 @@ packages:
   '@google/generative-ai@0.24.0':
     resolution: {integrity: sha512-fnEITCGEB7NdX0BhoYZ/cq/7WPZ1QS5IzJJfC3Tg/OwkvBetMiVJciyaan297OvE4B9Jg1xvo0zIazX/9sGu1Q==}
     engines: {node: '>=18.0.0'}
+
+  '@huggingface/inference@3.6.1':
+    resolution: {integrity: sha512-EtQlbBqcZycPe+qiTEFI+wNHOMpG0gwNTaZSvYu1juN1p/1dEgqAb2GO31dxLgNev2PzH9d+9nm8GngOsIepJg==}
+    engines: {node: '>=18'}
+
+  '@huggingface/jinja@0.3.3':
+    resolution: {integrity: sha512-vQQr2JyWvVFba3Lj9es4q9vCl1sAc74fdgnEMoX8qHrXtswap9ge9uO3ONDzQB0cQ0PUyaKY2N6HaVbTBvSXvw==}
+    engines: {node: '>=18'}
+
+  '@huggingface/tasks@0.17.9':
+    resolution: {integrity: sha512-lV6RgCJkqy3p93FFxP9H4SGJmFcHAwr1FO+Zk56q/JWsf7Tdsel1DEo1Xfd3An7ZPWpc2Y9ldRecGo9efDYghg==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -1423,6 +1437,15 @@ snapshots:
       levn: 0.4.1
 
   '@google/generative-ai@0.24.0': {}
+
+  '@huggingface/inference@3.6.1':
+    dependencies:
+      '@huggingface/jinja': 0.3.3
+      '@huggingface/tasks': 0.17.9
+
+  '@huggingface/jinja@0.3.3': {}
+
+  '@huggingface/tasks@0.17.9': {}
 
   '@humanfs/core@0.19.1': {}
 
