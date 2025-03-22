@@ -20,7 +20,9 @@ export default defineConfig({
   },
   define: {
     'process.env': {
-      VITE_OPENAI_API_KEY: JSON.stringify(process.env.VITE_OPENAI_API_KEY)
+      VITE_OPENAI_API_KEY: JSON.stringify(process.env.VITE_OPENAI_API_KEY),
+      VITE_GEMINI_API_KEY: JSON.stringify(process.env.VITE_GEMINI_API_KEY),
+      VITE_HF_API_KEY: JSON.stringify(process.env.VITE_HF_API_KEY),
     }
   }
 })
