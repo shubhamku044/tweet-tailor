@@ -48,7 +48,7 @@ Load unpacked extension in Chrome:
 ### Production Build
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 ## 🧁 Usage
@@ -58,7 +58,7 @@ npm run build
 3. Click "Generate Magic Reply"
 4. Copy & paste your perfect response!
 
-![Demo Screenshot](./screenshots/demo1.png)
+![Reach paglu demo video](./reach-paglu.mp4)
 
 ## 📜 License
 
