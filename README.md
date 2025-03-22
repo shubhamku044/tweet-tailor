@@ -1,54 +1,72 @@
-# React + TypeScript + Vite
+# 🎀 Reach Paglu - Your AI Tweet Wingman ✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-pink.svg)](https://opensource.org/licenses/MIT)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/your-extension-id?color=ff69b4)](https://chrome.google.com/webstore/detail/reach-paglu/your-extension-id)
+![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/reach-paglu)
 
-Currently, two official plugins are available:
+A kawaii Chrome extension that generates adorable AI-powered Twitter replies with just one click! Built with 💖 for developers and social media enthusiasts.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://github.com/yourusername/reach-paglu/assets/yourusername/video.mp4
 
-## Expanding the ESLint configuration
+## 🌸 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **One-Click Magic** - Generate perfect replies in seconds
+- **Cute UI Design** - Pink theme with playful animations
+- **AI-Powered** - DeepSeek integration for smart responses
+- **Clipboard Ready** - Copy replies with single click
+- **Lightweight** - Built with React + TypeScript + Vite
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Quick Start
+
+### Installation
+
+1. Clone repo:
+
+```bash
+git clone https://github.com/shubhamku044/tweet-tailor.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+pnpm install
 ```
+
+### Development
+
+```bash
+pnpm dev
+```
+
+Load unpacked extension in Chrome:
+
+1. Go to `chrome://extensions`
+2. Enable "Developer mode"
+3. Click "Load unpacked"
+4. Select `dist` folder
+
+### Production Build
+
+```bash
+npm run build
+```
+
+## 🧁 Usage
+
+1. Navigate to any Twitter page
+2. Click extension icon 🎀
+3. Click "Generate Magic Reply"
+4. Copy & paste your perfect response!
+
+![Demo Screenshot](./screenshots/demo1.png)
+
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 💌 Acknowledgments
+
+- [DeepSeek](https://deepseek.com) for AI capabilities
+- Vite + React + TypeScript ecosystem
+- Chrome Extension API
+- All our wonderful users ✨
