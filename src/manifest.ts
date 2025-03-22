@@ -3,9 +3,9 @@ import { defineManifest } from '@crxjs/vite-plugin';
 
 export default defineManifest({
   manifest_version: 3,
-  name: 'My Extension',
+  name: 'Reach paglu',
   version: '1.0.0',
-  description: 'My Extension',
+  description: 'Reach paglu is a chrome extension using which you can reply to anyone tweet using AI',
   action: {
     default_popup: 'index.html',
   },
